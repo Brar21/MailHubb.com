@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Box, Text, Image, Button } from '@chakra-ui/react'
+import Buttons from "./Button";
 
 function Navbar() {
 
@@ -16,8 +17,9 @@ function Navbar() {
                 <Image src="https://login.mailchimp.com/release/1.1.1f25f1d5410212a154de37493105bd1c6fdbead55/images/brand_assets/illos/art-hero-flowers.png"></Image>
             </Box>
             <Box display='flex' gap='1rem'>
-                <Button colorScheme='blue'>Login</Button>
-                <Button colorScheme='blue'>Sign-Up</Button>
+                <Buttons text="Log In"/>
+                
+                <Buttons col='#ffe200' text="Sign Up" />
             </Box>
         </Box>
     </>
