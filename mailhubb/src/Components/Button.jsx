@@ -1,8 +1,8 @@
 import { Button } from '@chakra-ui/react'
 function Buttons(props) {
-    const { text,col } = props;
+    const { text,col,w,m } = props;
     return <>
-        <Button borderRadius='50px' bg={col} color='black' p='1.8rem' border='1px solid black'>{text}</Button>
+        <Button borderRadius='50px' bg={col} position="relative" color='black' p='1.5rem'm={m} w={w} border='1px solid black'>{text}</Button>
     </>
 }
 export default Buttons;
