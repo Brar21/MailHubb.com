@@ -52,10 +52,10 @@ function Home() {
                     </Box>
                 </Box>
             </Box>
-            <Box>
-                <Heading fontSize='48px' m='2.5rem' fontFamily='monospace'>Find the right plan</Heading>
+            <Box bg='#efeeea' mt='-1.1%'>
+                <Heading fontSize='48px' p='3.5rem' fontFamily='monospace'>Find the right plan</Heading>
                 <Box w='80%' m='auto' display='flex'flexDirection='row'>
-                    <Box textAlign='start' border='1px solid black' p='2rem'>
+                    <Box textAlign='start' border='1px solid black' bg='white' p='2rem'>
                         <Heading mb='1rem' fontSize='30px' fontFamily='monospace'>Premium</Heading>
                         <Text mb='1rem'>Our most advanced tools, unlimited contacts, and priority support; built for teams.</Text>
                     <Text>Starts at</Text>
@@ -91,7 +91,7 @@ function Home() {
                             </Text >
                         </Box>
                     </Box>
-                    <Box textAlign='start' border='1px solid black' p='2rem'>
+                    <Box textAlign='start' border='1px solid black' bg='white' p='2rem'>
                         <Heading mb='1rem' fontSize='30px' fontFamily='monospace'>Standard</Heading>
                         <Text mb='1rem'>Sell even more with personalization, optimization tools, and enhanced automations.</Text>
                         <Text>Starts at</Text>
@@ -127,7 +127,7 @@ function Home() {
                             </Text >
                         </Box>
                     </Box>
-                    <Box textAlign='start' border='1px solid black' p='2rem'>
+                    <Box textAlign='start' border='1px solid black' bg='white' p='2rem'>
                         <Heading mb='1rem' fontSize='30px' fontFamily='monospace'>Essentials</Heading>
                         <Text mb='1rem'>Send the right content at the right time with testing and scheduling features.</Text>
                         <Text>Starts at</Text>
@@ -163,7 +163,7 @@ function Home() {
                             </Text >
                         </Box>
                     </Box>
-                    <Box textAlign='start' border='1px solid black' p='2rem'>
+                    <Box textAlign='start' border='1px solid black' bg='white' p='2rem'>
                         <Heading mb='1rem' fontSize='30px' fontFamily='monospace'>Free</Heading>
                         <Text mb='1rem'>Easily create email campaigns and learn more about your customers.</Text>
                         <Text>Starts at</Text>
@@ -200,6 +200,8 @@ function Home() {
                         </Box>
                     </Box>
                 </Box>
+                <Text m='1rem'><Link>*Overages</Link> apply if contact or email send limit is exceeded. Free plan sending will be paused if contact or email send limit is exceeded. Learn more</Text>
+                <Buttons col="#ffe200" m="2rem" text="See all plan details"/>
             </Box>
         </Box>
         <Footer />
