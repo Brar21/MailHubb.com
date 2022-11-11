@@ -32,7 +32,7 @@ function Navbar() {
             </Box>
             
                 <Link href="/login">
-                    <Buttons text="Log In" />
+                    <Buttons text="Log In" col="none" />
                 </Link>
                 <Link href="/signup">
                     <Buttons col='#ffe200' text="Sign Up" />

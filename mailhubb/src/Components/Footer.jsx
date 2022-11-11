@@ -107,8 +107,8 @@ function Footer() {
                 <Box w='20%'>
                     <Text textAlign='start'><strong>MailHubb</strong> Presents</Text> 
                     <Text textAlign='start' m='1rem 0'>Films, podcasts, and original series that celebrate the entrepreneurial spirit.</Text>
-                    <Button rightIcon={<AiOutlineArrowRight />} border='none' colorScheme='black' variant='outline'>
-                        Learn more
+                    <Button rightIcon={<AiOutlineArrowRight fontWeight='900' fontSize={25} />} border='none' colorScheme='black' variant='outline' _hover={{ bg: "yellow", mr: '10px', borderRadius: '50px', transition: "smooth", p: '10px 25px' }}>
+                        <b> Check it out</b>
                     </Button>
                     <Text textAlign='start' m='1rem 0'><strong>
                         Courier
@@ -116,8 +116,8 @@ function Footer() {
                     <Text textAlign='start' m='1rem 0'>
                         Expert insights, industry trends, and inspiring stories that help you live and work on your own terms.
                     </Text>
-                    <Button rightIcon={<AiOutlineArrowRight />} border="none" colorScheme='black' variant='outline'>
-                        Learn more
+                    <Button rightIcon={<AiOutlineArrowRight fontWeight='900' fontSize={25} />} border="none" colorScheme='black' variant='outline' _hover={{ bg: "yellow",mr:'10px',borderRadius:'50px',transition:"smooth",p:'10px 25px' }}>
+                        <b> Learn more</b>
                     </Button>
                 </Box>
             </Box>
