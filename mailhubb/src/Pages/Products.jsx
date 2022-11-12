@@ -1,5 +1,5 @@
 
-import { Box,Heading,Link } from "@chakra-ui/react";
+import { Box,Heading,Link,Image } from "@chakra-ui/react";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import {
@@ -18,7 +18,29 @@ function Products() {
 
     return <>
         <Navbar />
-        <Box bg='#efeeea' mt='-1.1%'>
+        <Box w='100%'   m='auto'>
+            <Box w='100%'  display='flex'  flexDirection='row' m='auto' textAlign='start' gap={10}>
+                <Box p='10rem 7rem'>
+                    <Text fontSize={14} ml={19} fontWeight='500'>Digital Marketing Storage</Text>
+                    <Heading fontSize='48px' ml={19} fontFamily='mono'>On brand marketing assets, every time</Heading>
+                    <Text m='3rem 0' ml={19} fontSize={28}>Use content studio to sync and manage digital assets including photos, graphics and other marketing files so your campaigns are consistent.</Text>
+                    <Buttons text='Start Building Content' col='#ffe01b'  m='1rem' />
+                </Box>
+                <Image w={1130} h={910} src="https://eep.io/images/yzco4xsimv0y/2Qk5spMGPk6pKEZ7QZftjS/5ee1b1974245cdedd663375d61f1585c/Mailchimp-Content-Studio-Hero.png?w=1520&fm=webp&q=70"></Image>
+            </Box>
+        </Box>
+        <Box w='100%' bg='#e7b75f'  m='6rem auto 0'>
+            <Box w='100%' p='4rem' display='flex' pt='6rem' flexDirection='row' m='auto' textAlign='start' gap={10}>
+                <Image w={1040} h={663} src="https://eep.io/images/yzco4xsimv0y/Hpaa3qth7QfgWM98yjalY/7379aefe6d76b6e09079e660fbe2401e/Mailchimp-Content-Studio-AUI.png?w=842&fm=webp&q=80"></Image>
+                <Box p='12rem'>
+                  
+                    <Heading fontSize='40px' ml={19} fontFamily='mono'>Digital asset management for marketers</Heading>
+                    <Text m='3rem 0' ml={19} fontSize={24}>Upload or sync your digital marketing assets, edit them directly in the content studio, and then use them across all of your marketing campaigns.</Text>
+                   
+                </Box>
+            </Box>
+        </Box>
+        <Box bg='#efeeea' >
             <Heading fontSize='48px' p='3.5rem' fontFamily='monospace'>Find the right plan</Heading>
             <Box w='80%' m='auto' display='flex' flexDirection='row'>
                 <Box textAlign='start' border='1px solid black' bg='white' p='2rem'>
@@ -167,7 +189,70 @@ function Products() {
                 </Box>
             </Box>
             <Text m='1rem'><Link>*Overages</Link> apply if contact or email send limit is exceeded. Free plan sending will be paused if contact or email send limit is exceeded. Learn more</Text>
-            <Buttons col="#ffe200" m="2rem" text="See all plan details" />
+            <Link to='/pricing'><Buttons col="#ffe200" m="2rem" text="See all plan details" /></Link> 
+        </Box>
+        <Box w='100%'  m='6rem auto 0'>
+            <Box w='100%' p='4rem' display='flex'  flexDirection='row' m='auto' textAlign='start' gap={10}>
+                <Box p='10rem'>
+
+                    <Heading fontSize='40px' ml={19} fontFamily='mono'>Bring all your work together</Heading>
+                    <Text m='3rem 0' ml={19} fontSize={24}>Organize all your creative digital assets in one Mailchimp account, so you’ll always have access to the files you need. When you're ready to launch a new campaign, our marketing storage platform will have your back.</Text>
+
+                </Box>
+                <Image w={1040} h={663} src="https://eep.io/images/yzco4xsimv0y/2faWyLgdDHto0Q2u5zWAYk/5a81ff0c272a594dc75879c3504a3032/Mailchimp-Content-Studio-Bring-All-Your-Work-Together.png?w=842&fm=webp&q=80"></Image>
+
+            </Box>
+        </Box>
+        <Box w='100%' m='1rem auto 0rem'>
+            <Box w='100%' p='4rem' display='flex'  flexDirection='row' m='auto' textAlign='start' gap={10}>
+                <Box p='6rem'>
+
+                    <Heading fontSize='40px' ml={19} fontFamily='mono'>Storage and editing tools at your fingertips</Heading>
+                    <Text m='3rem 0' ml={19} fontSize={24}>Customize the look of your marketing assets with beautiful graphics and designs that bring your brand to life. Our content studio includes a built-in photo editor so you can resize your images, add filters and text, adjust brightness and contrast, and a whole lot more.</Text>
+
+                </Box>
+                <Image w={1040} h={663} src="https://eep.io/images/yzco4xsimv0y/652KXmSRG9792xwyYEnQI/0328f29c99aefd0a0260143f0f4633de/Mailchimp-Content-Studio-Storage-and-Editing-Tools.png?w=842&fm=webp&q=80"></Image>
+
+            </Box>
+        </Box>
+        <Box w='60%' m='auto' textAlign='start'>
+            <Heading fontSize={48} fontWeight='500' fontFamily='mono'>Content Studio - Benefits</Heading>
+        </Box>
+        <Box w='100%' m='6rem auto 0'>
+            <Box w='90%' p='0 4rem'  display='flex'  flexDirection='row' m='auto' textAlign='start' gap={10}>
+                <Image w={840} h={563} src="https://eep.io/images/yzco4xsimv0y/2kj7g03Cnm7RnQs96r72YE/5ff511445b5bbdaabc5e97fb7f97960b/Mailchimp-Content-Studio-Manage-All-Your-Assets.png?fm=webp&q=80"></Image>
+                <Box p='8rem'>
+                    <Heading fontSize='40px' ml={19} fontFamily='mono'>Manage all your digital marketing assets</Heading>
+                    <Text m='3rem 0' ml={19} fontSize={24}>Storage in marketing is important. Easily store your photos, documents, and other campaign files in one convenient location, so you’ll always be able to find exactly what you're looking for. And when you connect your store and social media accounts, we'll pull in all of your product images for you, too.</Text>
+                </Box>
+            </Box>
+        </Box>
+        <Box w='100%' m='0 auto 1rem'>
+            <Box w='90%' p='4rem' display='flex'  flexDirection='row' m='auto' textAlign='start' gap={10}>
+                <Image w={740} h={463} src="https://eep.io/images/yzco4xsimv0y/57XYC7DpZlPKFlj4Z8CRiO/88565f2afb408a95932b02e3c9e278cf/Mailchimp-Content-Studio-Cohesive-Brand-Experience.png?fm=webp&q=80"></Image>
+                <Box p='8rem'>
+                    <Heading fontSize='40px' ml={19} fontFamily='mono'>Create a cohesive brand experience</Heading>
+                    <Text m='3rem 0' ml={19} fontSize={24}>Set a default logo to include in each marketing campaign, then re‑use your digital assets to keep all your marketing—across multiple channels—consistent and on‑brand.</Text>
+                </Box>
+            </Box>
+        </Box>
+        <Box w='100%' m='0rem auto 1rem'>
+            <Box w='90%' p='4rem' display='flex' flexDirection='row' m='auto' textAlign='start' gap={10}>
+                <Image w={740} h={463} src="https://eep.io/images/yzco4xsimv0y/4knnhC5s4ZIXHY7PHTpYQo/5819a182a87e08d0348b92d99c918e3a/Mailchimp-Content-Studio-From-Concept-to-Publish-Quickly.png?fm=webp&q=80"></Image>
+                <Box p='8rem'>
+                    <Heading fontSize='40px' ml={19} fontFamily='mono'>Quickly go from concept to publish</Heading>
+                    <Text m='3rem 0' ml={19} fontSize={24}>When you upload your images and other creative assets to our marketing asset management software, you can add them to any campaign in just a few clicks.</Text>
+                </Box>
+            </Box>
+        </Box>
+        <Box w='100%' m='0rem auto 1rem'>
+            <Box w='90%' p='4rem' display='flex' flexDirection='row' m='auto' textAlign='start' gap={10}>
+                <Image w={740} h={463} src="https://eep.io/images/yzco4xsimv0y/oPmNynO3mkJUaKS7GlLGZ/c8e131e83e3742e84e3dfc95eae09f40/Mailchimp-Content-Studio-Collaborate-With-Your-Team.png?fm=webp&q=80"></Image>
+                <Box p='8rem'>
+                    <Heading fontSize='40px' ml={19} fontFamily='mono'>Collaborate with your whole team</Heading>
+                    <Text m='3rem 0' ml={19} fontSize={24}>The content studio makes it easy to find, share, and repurpose content, so your team can work on campaigns together—and everyone stays on the same page.</Text>
+                </Box>
+            </Box>
         </Box>
         <Box width='70%' m='auto'>
             <Heading m='1rem' textAlign='start' fontSize='32px' fontWeight='medium'>FAQs</Heading>
