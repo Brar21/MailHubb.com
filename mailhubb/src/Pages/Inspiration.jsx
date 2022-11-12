@@ -1,10 +1,13 @@
+import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 
 function Inspiration() {
 
     return <>
-        <h1>welcome
-        </h1>
+        <Navbar />
+        
+        <Footer/>
     </>
 }
 export default Inspiration;
