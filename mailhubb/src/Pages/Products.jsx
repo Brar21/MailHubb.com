@@ -189,7 +189,7 @@ function Products() {
                 </Box>
             </Box>
             <Text m='1rem'><Link>*Overages</Link> apply if contact or email send limit is exceeded. Free plan sending will be paused if contact or email send limit is exceeded. Learn more</Text>
-            <Link to='/pricing'><Buttons col="#ffe200" m="2rem" text="See all plan details" /></Link> 
+            <Link href='/pricing'><Buttons col="#ffe200" m="2rem" text="See all plan details" /></Link> 
         </Box>
         <Box w='100%'  m='6rem auto 0'>
             <Box w='100%' p='4rem' display='flex'  flexDirection='row' m='auto' textAlign='start' gap={10}>
