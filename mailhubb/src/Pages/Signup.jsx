@@ -3,29 +3,33 @@ import React from 'react';
 import { FormControl, FormLabel } from '@chakra-ui/react';
 import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 import { Checkbox } from '@chakra-ui/react';
-import { Link } from '@chakra-ui/react'
+import { useContext } from 'react';
+import { AuthContext } from '../AuthContext/AuthContext';
+import { Navigate,Link } from 'react-router-dom';
 
 function Signup() {
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
+    const{ handleSign, handleLogin, SubmitSign, SubmitLogin, signUpdata, logindata, sign, login }=useContext(AuthContext);
+    const { email, password, username } = sign;
+    console.log(signUpdata, sign)
+    if (signUpdata.length > 0) {
+        return <Navigate to='/login'></Navigate>
+    }
     return <>
         <Box width='100%' h='full' display='flex' borderRight='30rem solid #ffe200'>
 
-            <Link href='/'> <Image w='200px' p='1.5rem' src="https://lh3.googleusercontent.com/IY-hoFjQZjeS_jWGsL1tJMagrA4ar-tW_-Dxj2yhCUen7R6Q_hyhH7SnRRHWxUybMHoDpeJaINJjU_YhHnBWStit7KK7ucIcPeGjELazJd5dLlLvyD5HrDWLMeteDM2gOr_T0eVaX8J8W-r0AqjPg6F2qsKBjVdmDwhMgJJ0bLLyLGm--uPUbGuVUwrUVXLT0fldzZ-1FQU1VzdASyFw8yon-mbJDJPo8rdEim1RN49bpCfVk6wSaYvbL0aiPIpKbNpaCreZVTZ7xGO-zL-IXu_nriLuiePsy23hwykWPwVpdhepLMNnnxNQ6YBRWTEjaNnHvxgMurNIlCFWjImXYYISEYInEz2hYc4PPoug43FrcrrtQHWjmKId9_DNasdz-UhDaxR_MfzNBDa38naua0C1Y3hd4CB_keJwvh3nVjOsdZVcYed0P-dHThVfPcQjW7tlP2pN1IyXwnKRKfh574pe9YkFAdVXf_lRf6p0IZDjIyv60IXf-OdacnWoA0Rr44Xj6o710gdo_2ZmZmF4ZeUmmdodngSYoxJu5x_U1vXTe93JqfuHKyqWgIEMnQJmqdcmv6p_CEiONHxMRfbjlUE7-PoHyZngnlNUDDyyfGqcxmxMs0tACGmXDaaSs-E2hDupgMEM4D3VeyZFM_d30gACfQW_FBeVvX7tPJ5i8Frg1e3Uvci15lqcArRyQU7bV-ieFRPuOVhyvn22jJgm08E5QTpsqp1dizNu6Vwa_YC0JX8phXlhmQC6sh03tj2VfLcjkaqi8KNPaiBFzxb4E1eJmtiMVfkGuutBX6xVU8_svF2rTS3uwGRISPgCHwAqj6Xx2nUlspwuLCR6mM_C9eAiaCIf0GGyXRQkAsxyjsDvld80Ck7CvvAkJ_7tmT8ctiRrldwH5_j2KlZmYBciy5l8hHxYv4lI4ePFKjrz7OkjKmlw9OIScYbYk2yut9LwAAXZN-o0IKGMzd_jBOrtPV2PzGNGc0bO_hAD9Vbgx9v2kI_8nbGp8g=w356-h105-no?authuser=0"></Image>
+            <Link href='/'> <Image w='200px' p='1.5rem' src="https://scontent.fluh3-2.fna.fbcdn.net/v/t39.30808-6/315534644_112414675016034_348437843538408388_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=lGynbLk3oCUAX9Kndme&_nc_ht=scontent.fluh3-2.fna&oh=00_AfA35fscErz_RYZMpfXxwY_axRHHzfvcAyT3ytS1ssZj0g&oe=6375ABBF"></Image>
             </Link>
             <Box display='flex' w='100%' h='full'   flexDirection='row'  >
                 <Box w='50%' h='full' m='10rem auto 0'>
                     <Heading textAlign='start' fontFamily='mono' fontSize='32px'>Sign up for Mailchimp</Heading>
-                    <Text textAlign='start' mb={5}>Create a free account or <Link color='blue' className='Link' href="/login" sx={{
-                        '.Link:hover &': {
-                            color: 'green.500',
-                        },
-                    }}>log in</Link></Text>
+                    <Text display='flex' textAlign='start' mb={5}>Create a free account or <Link to="/login" ><Text color='blue' ml={2} fontWeight='500'>log in</Text></Link></Text>
                     <FormControl >
                         <FormLabel>Email</FormLabel>
-                        <Input mb="1rem" />
+                        <Input mb="1rem" name='email' value={email} onChange={handleSign} />
                         <FormLabel>Username</FormLabel>
-                        <Input mb="1rem" />
+                        <Input mb="1rem" name='username' value={username} onChange={handleSign}/>
                         <Box display='flex' justifyContent='space-between'>
                             <FormLabel>Password</FormLabel>
                             <Button h='1.75rem' size='sm' onClick={handleClick} bg='none' fontSize='20px' textAlign='center'>
@@ -33,13 +37,13 @@ function Signup() {
                             </Button>
                         </Box>
 
-                        <Input type={show ? 'text' : 'password'} mb="1rem" />
+                        <Input type={show ? 'text' : 'password'} name='password' value={password} onChange={handleSign} mb="1rem" />
                         <Box>
                             <Checkbox size='lg' w='100%' mb='25px'> <Text pt='20px' textAlign='start' ml='10px' fontSize='15px'>I don't want to receive emails about Mailhubb and related intuit product and feature updates, marketing best practices, and promotions from Mailhubb.</Text> </Checkbox>
                             <Text textAlign='start'>By creating an account, you agree to our <Link color='blue' textDecoration='underline' href="#">Terms</Link> and have read and acknowledge the <Link color='blue' textDecoration='underline' href="#">Global Privacy Statement.</Link></Text>
                         </Box>
                         <Stack direction='row' spacing={4} align='center' >
-                            <Button colorScheme='teal' variant='solid' borderRadius='none' p='0px 42px' mt='30px' fontSize='16px'>
+                            <Button colorScheme='teal' variant='solid' borderRadius='none' p='0px 42px' mt='30px' fontSize='16px' onClick={SubmitSign}>
                                 Sign Up
                             </Button>
                         </Stack>

@@ -1,5 +1,5 @@
 
-import { Box,Heading,Link,Image } from "@chakra-ui/react";
+import { Box,Heading,Image } from "@chakra-ui/react";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import {
@@ -14,6 +14,7 @@ import { BsCheckLg } from "react-icons/bs";
 import { ImCross } from "react-icons/im"
 import { MinusIcon, AddIcon } from "@chakra-ui/icons";
 import Buttons from "../Components/Button";
+import { Link } from 'react-router-dom';
 function Products() {
 
     return <>
@@ -189,7 +190,7 @@ function Products() {
                 </Box>
             </Box>
             <Text m='1rem'><Link>*Overages</Link> apply if contact or email send limit is exceeded. Free plan sending will be paused if contact or email send limit is exceeded. Learn more</Text>
-            <Link href='/pricing'><Buttons col="#ffe200" m="2rem" text="See all plan details" /></Link> 
+            <Link to='/pricing'><Buttons col="#ffe200" m="2rem" text="See all plan details" /></Link> 
         </Box>
         <Box w='100%'  m='6rem auto 0'>
             <Box w='100%' p='4rem' display='flex'  flexDirection='row' m='auto' textAlign='start' gap={10}>

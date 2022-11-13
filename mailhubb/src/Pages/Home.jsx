@@ -1,10 +1,11 @@
-import { Heading, Box, Text, Image, Link } from "@chakra-ui/react";
+import { Heading, Box, Text, Image } from "@chakra-ui/react";
 import Buttons from "../Components/Button";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import { FaRupeeSign } from "react-icons/fa";
 import { BsCheckLg } from "react-icons/bs";
-import { ImCross } from "react-icons/im"
+import { ImCross } from "react-icons/im";
+import { Link } from 'react-router-dom';
 function Home() {
 
     return <>
@@ -19,34 +20,34 @@ function Home() {
             </Box>
             <Box w='100%' display='flex' flexDirection='row' flexWrap='nowrap'>
                 <Box textAlign='center'>
-                    <Link position='absolute' fontSize='24px'>Convert with Automations</Link>
+                  <Box ml='20%' >  <Text position='absolute' pt={4} _hover={{textDecoration:"underline",cursor:"pointer"}} fontSize='24px'>Convert with Automations</Text></Box>
                     <Image h='77%' src="https://eep.io/images/yzco4xsimv0y/33f3mgIWbzKjIpIRJi2f5v/6bd36bba38b7f6a94d587605ab9a7d75/Desktop_Feature_Cards_1_Automations.jpeg?w=630&fm=webp&q=80" />
-                    <Box h='20vh' bg='#d99536'>
+                    <Box h='20vh' bg='#d99536' p={8}>
                         <Text fontSize='20px' textAlign='start'>Send the right message at right time to convert more customers.</Text>
                         <Buttons text="Learn more" m="2rem 5rem 0rem -15rem" col="none" />
                     </Box>
                 </Box>
                 <Box>
-                    <Link fontSize='24px' position='absolute'>Optimize with AI & Analytics</Link>
+                    <Box ml='20%'><Text fontSize='24px' pt={4} _hover={{textDecoration:"underline",cursor:"pointer"}} position='absolute'>Optimize with AI & Analytics</Text></Box>
                     <Image h='77%' src="https://eep.io/images/yzco4xsimv0y/hBcOt3RZ5DOhMJD2Hi2Z2/96b28d17c45e9376731ad825b002b0ff/Desktop_Feature_Cards_2_Analytics.png?w=630&fm=webp&q=80" />
-                    <Box h='20vh' bg='#e7b75f'>
+                    <Box h='20vh' bg='#e7b75f' p={8}>
                         <Text fontSize='20px' textAlign='start'>Get AI-assisted suggestions to help make your content more engaging.</Text>
                         <Buttons text="Learn more" m="2rem 5rem 0rem -15rem" col="none" />
                     </Box>
                 </Box>
                 <Box>
-                    <Link position='absolute' mr='20rem' fontSize='24px'>Target with Segmentation</Link>
+                    <Box ml='20%'> <Text position='absolute' pt={4} _hover={{textDecoration:"underline",cursor:"pointer"}} mr='20rem' fontSize='24px'>Target with Segmentation</Text></Box>
                     <Image h='77%' src="https://eep.io/images/yzco4xsimv0y/5xqzo6y8Z7anw9VQXJarpj/5f91182af7bf16ecc34b487a619d0a54/Desktop_Feature_Cards_3_Segmentation.jpeg?w=630&fm=webp&q=80" />
-                    <Box h='20vh' bg='#efeeea' m='auto'>
+                    <Box h='20vh' bg='#efeeea' m='auto' p={8}>
                         <Text fontSize='20px' textAlign='start'>
                             Boost customer loyalty by predicting the right ones to target.</Text>
                         <Buttons text="Learn more" m="2rem 5rem 0rem -15rem" col="none" />
                     </Box>
                 </Box>
                 <Box>
-                    <Link position='absolute' fontSize='24px'>Sync with Integrations</Link>
+                    <Box ml='20%'> <Text position='absolute' pt={4}  _hover={{textDecoration:"underline",cursor:"pointer"}} fontSize='24px'>Sync with Integrations</Text></Box>
                     <Image h='77%' src="https://eep.io/images/yzco4xsimv0y/lsHRpmOI81ZcFS1Yld0Bs/1e2812587cd0f3089061bd4b513fd6d0/Desktop_Feature_Cards_4_Integrations.png?w=630&fm=webp&q=80" />
-                    <Box h='20vh' bg='#fdf8ea'>
+                    <Box h='20vh' bg='#fdf8ea' p={8}>
                         <Text fontSize='20px' textAlign='start'>Connect more tools, get more data, save time, and make better decisions.</Text>
                         <Buttons text="Learn more" m="2rem 5rem 1rem -15rem" col="none" />
                     </Box>
@@ -201,7 +202,7 @@ function Home() {
                     </Box>
                 </Box>
                 <Text m='1rem'><Link>*Overages</Link> apply if contact or email send limit is exceeded. Free plan sending will be paused if contact or email send limit is exceeded. Learn more</Text>
-                <Buttons col="#ffe200" m="2rem" text="See all plan details"/>
+                <Link to='/pricing'><Buttons col="#ffe200" m="2rem" text="See all plan details" /></Link>
             </Box>
         </Box>
         <Footer />
