@@ -8,9 +8,12 @@
 https://gabby-pollution-3220.vercel.app/home
 
 ## Pages & Features
-- Home Page(Stays)
 - Login-in  and sign-up Page
-- Responsive
+- Home Page
+- Products Page
+- Resources Page
+- Inspiration Page
+- Pricing Page
 
 ## Tech Stack
 - `REACT`
