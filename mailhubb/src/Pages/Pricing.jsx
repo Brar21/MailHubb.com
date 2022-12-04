@@ -258,8 +258,10 @@ function Pricing() {
                        
                     </Table>
                 </TableContainer>
-                    <Buttons text='Compare all features' col='white' m='3rem' />
-                </Box>
+                
+            </Box>
+            <Buttons text='Compare all features' col='white' m='3rem' />
+
                 <Grid templateColumns='repeat(2, 1fr)' textAlign='start' gap={16} p='1rem' mb='8rem'>
                     <GridItem borderRight='2px solid' pr='1rem' >
                         <Heading fontSize='32px' fontWeight='400' >Also included: Free tools for getting your business online</Heading>

@@ -19,8 +19,10 @@ function Signup() {
     return <>
         <Box width='100%' h='full' display='flex' borderRight='30rem solid #ffe200'>
 
-            <Link href='/'> <Image w='200px' p='1.5rem' src="https://scontent.fluh3-2.fna.fbcdn.net/v/t39.30808-6/315534644_112414675016034_348437843538408388_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=lGynbLk3oCUAX9Kndme&_nc_ht=scontent.fluh3-2.fna&oh=00_AfA35fscErz_RYZMpfXxwY_axRHHzfvcAyT3ytS1ssZj0g&oe=6375ABBF"></Image>
-            </Link>
+            <Box>
+                <Link to='/'> <Image w='400px' src="https://scontent.fluh3-2.fna.fbcdn.net/v/t39.30808-6/315534644_112414675016034_348437843538408388_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=8L5rfAJryx0AX_4KJfK&_nc_ht=scontent.fluh3-2.fna&oh=00_AfAv61tMRlXYaFEXCO9ZNaWD4N1ig4jm4H0265--9jjb_w&oe=63915B3F"></Image>
+                </Link>
+            </Box>
             <Box display='flex' w='100%' h='full'   flexDirection='row'  >
                 <Box w='50%' h='full' m='10rem auto 0'>
                     <Heading textAlign='start' fontFamily='mono' fontSize='32px'>Sign up for Mailchimp</Heading>

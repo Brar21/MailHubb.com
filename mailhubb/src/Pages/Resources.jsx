@@ -14,12 +14,12 @@ function Resources() {
             </Box>
         </Box>
         <Box w='100%' bg='#d8eacc' h='700px' m='auto'>
-            <Box w='70%' p='4rem' display='flex' pt='6rem' flexDirection='row' m='auto' textAlign='start' gap={10}>
+            <Box w='100%' p='4rem' display='flex' pt='6rem' flexDirection='row' m='auto' textAlign='start' gap={10}>
                 <Image w={777} h={517} src="https://eep.io/images/yzco4xsimv0y/5WXmSbZWmW0fIZv2Mooxs3/03a02d2b18b167fd436678a97dbe1f49/ILLO_Spot_CustomerEmpathy_AnaLeovy_1300x1300.png?w=540&fm=webp&q=80"></Image>
                 <Box p={10}>
                     <Text fontSize={14} ml={19} fontWeight='500'>CASE STUDY</Text>
                     <Heading fontSize='40px' ml={19} fontFamily='mono'>How Captar Alunos doubled its client roster with automations</Heading>
-                    <Text m='3rem 0' ml={19} fontSize={24}>The education marketing agency shares how they thrived during the pandemic by using automations and an empathetic message.</Text>
+                    <Text m='2rem 0' ml={19} fontSize={24}>The education marketing agency shares how they thrived during the pandemic by using automations and an empathetic message.</Text>
                     <Buttons text='Read more' col='transparent' w='200px' m='1rem' />
                 </Box>
             </Box>
@@ -62,7 +62,7 @@ function Resources() {
             </Box>
         </Box>
         <Box w='100%' bg='#c5dbf2' h='600px' m='auto'>
-            <Box w='70%' p='4rem' display='flex' pt='6rem' flexDirection='row' m='auto' textAlign='start' gap={10}>
+            <Box w='100%' p='4rem' display='flex' pt='6rem' flexDirection='row' m='auto' textAlign='start' gap={10}>
                 <Image w={477} h={317} src="https://eep.io/images/yzco4xsimv0y/yJTtJNbrrMIi6OaC8igGm/7c04d938f6ef7aec40cbaa158301ae55/hero-image-for-the-big-prize-a-case-study-in-automation.jpg?w=540&fm=webp&q=80"></Image>
                <Box p={3}>
                     <Text fontSize={14} ml={19} fontWeight='500'>CASE STUDY</Text>

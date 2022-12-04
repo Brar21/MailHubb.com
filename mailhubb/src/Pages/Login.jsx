@@ -19,8 +19,10 @@ function Login() {
     return <>
         <Box width='100vw' h='full'  bg='yellow' display='flex'>
             <Box w='36%' h='100vh' bg='white' className='Link' borderLeft='10px solid #ffe200' >
-                <Link href='/'> <Image w='200px' p='2rem' src="https://scontent.fluh3-2.fna.fbcdn.net/v/t39.30808-6/315534644_112414675016034_348437843538408388_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=lGynbLk3oCUAX9Kndme&_nc_ht=scontent.fluh3-2.fna&oh=00_AfA35fscErz_RYZMpfXxwY_axRHHzfvcAyT3ytS1ssZj0g&oe=6375ABBF"></Image>
-                </Link>
+                <Box>
+                    <Link to='/'> <Image w='200px' src="https://scontent.fluh3-2.fna.fbcdn.net/v/t39.30808-6/315534644_112414675016034_348437843538408388_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=8L5rfAJryx0AX_4KJfK&_nc_ht=scontent.fluh3-2.fna&oh=00_AfAv61tMRlXYaFEXCO9ZNaWD4N1ig4jm4H0265--9jjb_w&oe=63915B3F"></Image>
+                    </Link>
+                </Box>
                 <Box w='60%' m='20% auto' display='flex' flexDirection='column' gap={3}>
                     <Heading textAlign='start' fontFamily='mono' fontSize='32px'>Log In</Heading>
                     <Text textAlign='start' display='flex' mb={5}>Need  a MailHubb account ?  <Link to="/signup"><Text color='blue' fontWeight='500' ml={2} _hover={{textDecoration:"underline"}}>Create an account</Text> </Link></Text>

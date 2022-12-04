@@ -10,7 +10,7 @@ function Navbar() {
     const { state, Logout, logindata,login } = useContext(AuthContext);
     console.log(logindata,"Brar")
     return <>
-        <Box w='100%' display='flex'bg='white' justifyContent='space-between' alignItems='center' p='1.5rem 3rem' position='sticky' top='0'>
+        <Box w='100%' display='flex'bg='white' justifyContent='space-between' alignItems='center' p='1.5rem 3rem' zIndex={999} px={4} position='fixed' top='0'>
             <Box display='flex' gap="2.5rem" fontWeight='600' fontSize={20}>
                 <Link to='/products'>Products</Link>
                 <Link to='/resources'>Resources</Link>
@@ -19,7 +19,7 @@ function Navbar() {
             </Box>
             
             <Box>
-                <Link to='/'> <Image w='200px' src="https://scontent.fluh3-2.fna.fbcdn.net/v/t39.30808-6/315534644_112414675016034_348437843538408388_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=lGynbLk3oCUAX9Kndme&_nc_ht=scontent.fluh3-2.fna&oh=00_AfA35fscErz_RYZMpfXxwY_axRHHzfvcAyT3ytS1ssZj0g&oe=6375ABBF"></Image>
+                <Link to='/'> <Image w='200px' src="https://scontent.fluh3-2.fna.fbcdn.net/v/t39.30808-6/315534644_112414675016034_348437843538408388_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=8L5rfAJryx0AX_4KJfK&_nc_ht=scontent.fluh3-2.fna&oh=00_AfAv61tMRlXYaFEXCO9ZNaWD4N1ig4jm4H0265--9jjb_w&oe=63915B3F"></Image>
                 </Link>
             </Box>
             <Box display='flex' gap='1rem'>
