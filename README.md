@@ -5,7 +5,7 @@
 
 
 ## Deployed Link
-https://gabby-pollution-3220.vercel.app/home
+https://sweet-cactus-515f7c.netlify.app/login
 
 ## Pages & Features
 - Login-in  and sign-up Page
