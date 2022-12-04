@@ -5,7 +5,8 @@
 
 
 ## Deployed Link
-https://sweet-cactus-515f7c.netlify.app/login
+https://sweet-cactus-515f7c.netlify.app/
+
 
 ## Pages & Features
 - Login-in  and sign-up Page
