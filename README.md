@@ -1,7 +1,7 @@
 ## Creating mailchimp application
 
-# MAIL CHIMP
-- MailChimp is a marketing automation platform designed and developed for businesses using email to reach out to their target market.
+# MAIL-HUBB
+- Mailhubb is a marketing automation platform designed and developed for businesses using email to reach out to their target market.
 
 
 ## Deployed Link
